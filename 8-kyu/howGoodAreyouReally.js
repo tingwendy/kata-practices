@@ -17,3 +17,12 @@ function betterThanAverage(classPoints, yourPoints) {
   }
 
   use reduce to calculate avg. comepare avg with your score through ternary operator. 
+
+  solution 2:
+
+  function betterThanAverage(classPoints, yourPoints) {
+    const classPointsSum = classPoints.reduce((a, b) => a + b, 0);
+    const classAverage = classPointsSum / classPoints.length;
+    const isBetter = yourPoints > classAverage;
+    return isBetter;
+  }
