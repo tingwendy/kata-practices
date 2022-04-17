@@ -29,3 +29,16 @@ function vowelIndices(word){
     }
     return arr;
   }
+
+  alternatively:
+  function vowelIndices(word){
+    let res = []
+    
+    for (let i = 0; i < word.length; i++) { 
+      if ('aiuoeyAIUOEY'.includes(word[i])) {
+         res.push(i+1)
+      }
+      }
+    
+  return res
+  }
