@@ -17,3 +17,9 @@ function digitize(n) {
 2. make it a string and then split the string
 3. reverse the string
 4. use map to return a new array out of the string. 
+
+alternate one liner:
+
+function digitize(n) {
+    return String(n).split('').map(Number).reverse()
+  }
